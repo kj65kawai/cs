@@ -60,10 +60,24 @@
 </p>
 
 <p>
-<center>
-<img src="logo-anime-wo-30.gif" width=512 height=384 alt="東三河サイエンスカフェ（ロゴ）">
-</center>
+<script>
+var d1 = new Date();
+var d1m = d1.getMonth()+1;
+var d1d = d1.getDate()+0;
+if ((d1m == 12) && ((1 <= d1d) && (d1d <= 25))) {
+  document.write('<center><img src="logo-anime-xmas-wo-30.gif" width=512 height=384 alt="東三河サイエンスカフェ（ロゴ）"></center>');
+} else {
+  if ((d1m == 1) && ((1 <= d1d) && (d1d <= 15))) {
+    document.write('<center><img src="logo-anime-ny-wo-30.gif" width=512 height=384 alt="東三河サイエンスカフェ（ロゴ）"></center>');
+  } else {
+    document.write('<center><img src="logo-anime-wo-30.gif" width=512 height=384 alt="東三河サイエンスカフェ（ロゴ）"></center>');
+  }
+}
+</script>
 </p>
+
+
+
 
 <p>
 <font size="-1" color=red><i><b>September 25, 2023</b></i></font><br />
@@ -109,19 +123,6 @@
 
 <p>
 <b><a href="prev-news.html">ニュース一覧</b><img src="right.gif" width=20 height=22 alt="right" align=absmiddle border=0></a><br />
-</p>
-
-
-<p>
-<script>
-var d1 = new Date("Sep 25, 2023 15:00:00");
-var d2 = new Date();
-var d3 = new Date("Dec 1, 2023 00:00:00");
-if ((d1.getTime() <= d2.getTime()) && (d2.getTime() < d3.getTime())) {
-  document.write("・");
-}
-</script>
-・
 </p>
 
 </td>
